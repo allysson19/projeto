@@ -1,0 +1,12 @@
+<% content_for :title, "Novo cadastro de funcionario " %>
+<h1>Cadastro de funcionarios</h1>
+<br>
+<p>Se cadastre no nosso sistema :)</p>
+<br>
+<%= render "form", abafuncionario: @abafuncionario %>
+
+<br>
+
+<div>
+  <%= link_to "Voltar para cadastro de funcionario", abafuncionarios_path %>
+</div>

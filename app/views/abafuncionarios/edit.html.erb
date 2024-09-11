@@ -1,0 +1,12 @@
+<% content_for :title, " Editar aba de cadastro  funcionário" %>
+
+<h1>Editar cadastro de funcionário</h1>
+
+<%= render "form", abafuncionario: @abafuncionario %>
+
+<br>
+
+<div>
+  <%= link_to "Mostre este cadastro de funcionarios ", @abafuncionario %> |
+  <%= link_to "Voltar para lista de cadastro ", abafuncionarios_path %>
+</div>

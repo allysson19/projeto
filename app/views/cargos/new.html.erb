@@ -1,0 +1,11 @@
+<% content_for :title, "novo cargo" %>
+
+<h1>Cadastrar novo cargo</h1>
+
+<%= render "form", cargo: @cargo %>
+
+<br>
+
+<div>
+  <%= link_to "voltar para pagina anterior ", cargos_path %>
+</div>

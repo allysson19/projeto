@@ -1,0 +1,12 @@
+<% content_for :title, "Edite esse departamento" %>
+
+<h1>Editar departamento</h1>
+
+<%= render "form", departamento: @departamento %>
+
+<br>
+
+<div>
+  <%= link_to "Mostre essa aba de departamentos ", @departamento %> |
+  <%= link_to "Volte para aba departamentos", departamentos_path %>
+</div>

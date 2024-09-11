@@ -1,0 +1,9 @@
+<p style="color: green"><%= notice %></p>
+<%= render @abafuncionario %>
+
+<div>
+  <%= link_to "Editar este cadastro desse funcionário", edit_abafuncionario_path(@abafuncionario) %> |
+  <%= link_to "voltar para aba de funcionarios", abafuncionarios_path %>
+
+  <%= button_to "Exclua este cadastro do funcionário", @abafuncionario, method: :delete %>
+</div>

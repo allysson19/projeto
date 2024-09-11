@@ -1,0 +1,2 @@
+class Abafuncionario < ApplicationRecord
+end

@@ -1,0 +1,57 @@
+<%= form_with(model: cargo) do |form| %>
+  <% if cargo.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(cargo.errors.count, "error") %> proibiu que esta carga fosse salva:</h2>
+
+      <ul>
+        <% cargo.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nomecargo, style: "display: block" %>
+    <%= form.text_field :nomecargo %>
+  </div>
+
+  <div>
+    <%= form.label :descricao, style: "display: block" %>
+    <%= form.text_area :descricao %>
+  </div>
+
+  <div>
+    <%= form.label :departamento, style: "display: block" %>
+    <%= form.text_field :departamento %>
+  </div>
+
+  <div>
+    <%= form.label :nivelcargo, style: "display: block" %>
+    <%= form.text_field :nivelcargo %>
+  </div>
+
+  <div>
+    <%= form.label :salbase, style: "display: block" %>
+    <%= form.text_field :salbase %>
+  </div>
+
+  <div>
+    <%= form.label :requisitos, style: "display: block" %>
+    <%= form.text_area :requisitos %>
+  </div>
+
+  <div>
+    <%= form.label :beneficios, style: "display: block" %>
+    <%= form.text_area :beneficios %>
+  </div>
+
+  <div>
+    <%= form.label :statuscargo, style: "display: block" %>
+    <%= form.text_field :statuscargo %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

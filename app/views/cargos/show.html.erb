@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @cargo %>
+
+<div>
+  <%= link_to "Editar esse cargo", edit_cargo_path(@cargo) %> |
+  <%= link_to "voltar para cargos", cargos_path %>
+
+  <%= button_to "exclua esse cargo", @cargo, method: :delete %>
+</div>

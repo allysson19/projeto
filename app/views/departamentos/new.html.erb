@@ -1,0 +1,11 @@
+<% content_for :title, "cadastro departamento" %>
+
+<h1>Novo departamento</h1>
+
+<%= render "form", departamento: @departamento %>
+
+<br>
+
+<div>
+  <%= link_to "Volte para o cadastro de departamentoos", departamentos_path %>
+</div>

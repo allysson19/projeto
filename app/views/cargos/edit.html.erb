@@ -1,0 +1,12 @@
+<% content_for :title, "Edite este cargo" %>
+
+<h1>Editar cargo</h1>
+
+<%= render "form", cargo: @cargo %>
+
+<br>
+
+<div>
+  <%= link_to "Mostre esse cargo", @cargo %> |
+  <%= link_to "voltar", cargos_path %>
+</div>

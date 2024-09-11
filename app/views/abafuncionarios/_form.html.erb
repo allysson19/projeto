@@ -1,0 +1,105 @@
+<%= form_with(model: abafuncionario) do |form| %>
+
+  <% if abafuncionario.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(abafuncionario.errors.count, "error") %> proibiu que este funcionário fosse cadastrado:</h2>
+
+      <ul>
+        <% abafuncionario.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+<body>
+
+  <div>
+    <%= form.label :nomecompleto, style: "display: block" %>
+    <%= form.text_field :nomecompleto %>
+  </div>
+
+  <div>
+    <%= form.label :datanasc, style: "display: block" %>
+    <%= form.date_field :datanasc %>
+  </div>
+
+  <div>
+    <%= form.label :genero, style: "display: block" %>
+    <%= form.text_field :genero %>
+  </div>
+
+  <div>
+    <%= form.label :cpf, style: "display: block" %>
+    <%= form.text_field :cpf %>
+  </div>
+
+  <div>
+    <%= form.label :rg, style: "display: block" %>
+    <%= form.text_field :rg %>
+  </div>
+
+  <div>
+    <%= form.label :rua, style: "display: block" %>
+    <%= form.text_field :rua %>
+  </div>
+
+  <div>
+    <%= form.label :numero, style: "display: block" %>
+    <%= form.text_field :numero %>
+  </div>
+
+  <div>
+    <%= form.label :complemento, style: "display: block" %>
+    <%= form.text_field :complemento %>
+  </div>
+
+  <div>
+    <%= form.label :bairro, style: "display: block" %>
+    <%= form.text_field :bairro %>
+  </div>
+
+  <div>
+    <%= form.label :cidade, style: "display: block" %>
+    <%= form.text_field :cidade %>
+  </div>
+
+  <div>
+    <%= form.label :estado, style: "display: block" %>
+    <%= form.text_field :estado %>
+  </div>
+
+  <div>
+    <%= form.label :cep, style: "display: block" %>
+    <%= form.text_field :cep %>
+  </div>
+
+  <div>
+    <%= form.label :telefone, style: "display: block" %>
+    <%= form.text_field :telefone %>
+  </div>
+
+  <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
+    <%= form.label :cargo, style: "display: block" %>
+    <%= form.text_field :cargo %>
+  </div>
+  <div>
+    <%= form.label :status, style: "display: block" %>
+    <%= form.text_field :status %>
+  </div>
+    
+
+  <div>
+    <%= form.label :departamento, style: "display: block" %>
+    <%= form.text_field :departamento %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+</body>

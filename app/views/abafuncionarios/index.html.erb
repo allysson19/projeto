@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+<h1>Cadastre-se</h1>
+
+<div id="abafuncionarios">
+  <% @abafuncionarios.each do |abafuncionario| %>
+    <%= render abafuncionario %>
+    <p>
+      <%= link_to "Mostre esse cadastro desse funcionario", abafuncionario %>
+    </p>
+   <a href="http://127.0.0.1:5500/projeto/app/views/direcao.html" target="_blank">
+    Ir para pagina de direcionamento!
+ </a>
+  <% end %>
+
+</div>
+ 
+<%= link_to "Novo cadastro ", new_abafuncionario_path %>
